@@ -56,6 +56,18 @@ script:
     && (echo 'cronjob is installed: pass' && exit 0)
     || (echo 'cronjob is installed: fail' && exit 1)
 
+  # Check if mysql-backup-pre hook file exists
+  - >
+    test -e /etc/mysql-backup-pre
+    && (echo 'cronjob is installed: pass' && exit 0)
+    || (echo 'cronjob is installed: fail' && exit 1)
+
+  # Check if mysql-backup-post hook file exists
+  - >
+    test -e /etc/mysql-backup-post
+    && (echo 'cronjob is installed: pass' && exit 0)
+    || (echo 'cronjob is installed: fail' && exit 1)
+
 after_failure:
   - sudo crontab -l
   - sudo ansible --version

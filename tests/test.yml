@@ -4,3 +4,6 @@
 
   roles:
     - ansible-role-automysqlbackup
+  vars:
+    automysqlbackup_enable_pre_hook: yes
+    automysqlbackup_enable_post_hook: yes
