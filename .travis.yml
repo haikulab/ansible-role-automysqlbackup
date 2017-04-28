@@ -73,6 +73,7 @@ after_failure:
   - sudo ansible --version
   - ansible -i 127.0.0.1, -m setup all -c local
 
+
 notifications:
-  slack: ambimax:2MlPTX9bY9aPxCPhJGxHKIT6
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  slack:
+  secure: KbZLE1Hv+2C/ip+mdzNHOaLBYHHLmdcl2ty0A9Sz/ov2isoq0HEefyAa70Bj3CgjzvKYaY1Dh9209c0Ve1D23KVE8DvYVKBHt    IcQwjhC+BIp9azzHQ7tPcvMPSdpzuX16iaDfHCHDNjFVWj4XwXwnnucwDqnR6NBW3tMgon3Cx4=
